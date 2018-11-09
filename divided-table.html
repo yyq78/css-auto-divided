@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>divided-table</title>
+    <style>
+    /*直接使用table,td元素，只需要定义table的宽度,td元素会自动平均划分宽度*/
+    *{
+            padding:0;
+            margin:0;
+        }
+    table{
+        width:300px;
+        border-collapse: collapse;/*注意清除td元素间的间距哦*/
+    }
+    td{
+        height:30px;
+        line-height:30px;
+        text-align: center;
+        color:white;
+    }
+    table td:nth-child(1){
+        background:red;
+    }
+    table td:nth-child(2){
+        background:orange;
+    }
+    table td:nth-child(3){
+        background:yellow;
+    }
+    table td:nth-child(4){
+        background:green;
+    }
+    table td:nth-child(5){
+        background:blue;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+    </table>
+</body>
+</html>

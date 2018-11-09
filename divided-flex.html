@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>divided-flex</title>
+    <style type="text/css">
+    /*为父元素定义 display:flex;flex-direction:row;使子元素水平排列，再计算子元素宽度和高度，使子元素平均划分父元素宽度*/
+   *{
+            padding:0;
+            margin:0;
+        }
+    .flex-box{
+        width:300px;
+        display:flex;
+        flex-direction:row;
+    }
+    .flex-box div{
+        width:20%;
+        height:30px;
+        line-height: 30px;
+        text-align: center;
+        color:white;
+    }
+    .flex-box div:nth-child(1){
+        background:red;
+    }
+    .flex-box div:nth-child(2){
+        background:orange;
+    }
+    .flex-box div:nth-child(3){
+        background:blue;
+    }
+    .flex-box div:nth-child(4){
+        background:green;
+    }
+    .flex-box div:nth-child(5){
+        background:purple;
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>auto-divided-table-cell</title>
+     <style type="text/css">
+     /*
+        当父元素定义“display:table”而子元素定义“display:table-cell”时，如果给父元素
+一定的宽度，父元素宽度就会根据子元素的个数进行自动平均划分。
+     */
+        *{
+            padding:0;
+            margin:0;
+        }
+        ul{
+            list-style-type: none;
+            display:table;/*注意是table,不是table-row*/
+            width:300px;
+        }
+        li{
+           display:table-cell;
+           height:30px;
+           line-height:30px;
+           text-align:center;/*使文本水平垂直居中*/
+           color:white;
+        }
+        ul li:nth-child(1){
+            background:red;
+        }
+        ul li:nth-child(2){
+            background:orange;
+        }
+        ul li:nth-child(3){
+            background:blue;
+        }
+        ul li:nth-child(4){
+            background:green;
+        }
+        ul li:nth-child(5){
+            background:purple;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>
